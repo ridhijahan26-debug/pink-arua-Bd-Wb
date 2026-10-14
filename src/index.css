@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    background-color: #07070B;
+    color: #F8F5FA;
+  }
+
+  h1, h2, h3, h4, h5, h6, .font-display {
+    font-family: 'Outfit', system-ui, -apple-system, sans-serif;
+  }
+}
+
+/* Neon glow & visual identity utilities */
+.neon-glow-pink {
+  box-shadow: 0 0 25px rgba(255, 45, 149, 0.45);
+}
+
+.neon-glow-text {
+  text-shadow: 0 0 16px rgba(255, 45, 149, 0.6);
+}
+
+.neon-glow-subtle {
+  box-shadow: 0 0 15px rgba(255, 45, 149, 0.25);
+}
+
+.neon-border-hover:hover {
+  border-color: #FF2D95;
+  box-shadow: 0 0 20px rgba(255, 45, 149, 0.35);
+}
+
+/* Hide scrollbar for clean horizontal category carousels */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* iOS Safe Area Padding */
+.pb-safe {
+  padding-bottom: env(safe-area-inset-bottom, 1rem);
+}
